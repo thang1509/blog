@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>{{post.title_tag}}</title>
+{% endblock %}
+{% block content %}
+<div class="card">
+  <img src="{{post.img.url}}" class="card-img-top" style="width:250px; height:400px;" alt="...">
+  <div class="card-body">
+    <ul class="post-meta" style="list-style-type: none; padding-left: 0px;">
+      <li><i class="fa fa-tag"></i><a>{{post.category}}</a></li>
+      <li><i class="fa fa-user"></i><a>Post By {{post.author.first_name}}</a></li>
+      <li><i class="fa fa-download" aria-hidden="true"></i><a href="{{post.download}}">Download PDF</a></li>
+      <li><i class="fa fa-clock-o"></i><a>{{post.post_date | date:'d F'}}</a></li>
+    </ul>
+    <h5 class="card-title">{{post.title}}</h5>
+    <h6 class="card-title" style="color:#33ADFF">Tác giả: {{post.tacgia}}</h6>
+    <p class="card-text">{{post.body | safe}}</p>
+  </div>
+</div>
+<div class="comment nav-bar">
+<h2>Comments<button  onclick="window.location.href='comment/';" class="btn ">AddComment</button></h2>
+{%if not post.comments.all%}
+    No Comment Yet...<a href='comment/'>
+    Add One</a>
+{%else%}
+    {%for comment in post.comments.all%}
+        <strong>{{comment.name}} - {{comment.date_added}}</strong>
+        <br>{{comment.body}}<br><hr></hr>
+    {%endfor%}
+{%endif%}
+</div>
+
+{% endblock %}

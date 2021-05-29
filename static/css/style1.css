@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html,body{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar{
+    background-color: white;
+    border-bottom: 1px solid gray;
+    box-shadow: 0 1px 2px #888;
+}
+.navbar .navbar-brand .img{
+    max-width: 300px;
+    max-height: 100px;
+}
+.collapse .nav-item .nav-link{
+    background-color: #eef3fa;
+    border-radius: 30px;
+    padding: 2px 5px 2px 2px;
+}
+.collapse .nav-item .arrow{
+    opacity: 0.8;
+}
+.collapse .nav-item .arrow:hover{
+    opacity: 1;
+}
+.collapse .nav-item .arrow::after{
+    vertical-align: 0.01rem;
+}
+.collapse .nav-item .nav-link .arrow1{
+    padding: 0px 15px;
+}
+.content .post{
+    margin-top: 150px;
+
+}
+.content .card{
+    margin: auto;
+    border: 1px solid #d8e9ff;
+    box-shadow: 0 4px 12px rgb(221 225 238 / 50%);
+    margin-bottom: 20px;
+}
+.content .post .card .card-img-top{
+    margin: auto;
+    margin-bottom: 10px;
+}
+.read{
+    display: inline;
+}
+.read a{
+    margin-left: 40%;
+    text-decoration: none;
+}
+.read .btn{
+    display: inline;
+    background-color: #f27c09;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+}
+.read .btn:hover{
+    background-color: black;
+}
+@media screen and (max-width:550px){
+    .read a{
+        margin-left: 32%;
+    }
+}
+.list-group-item .name{
+    min-width: 50px;
+}
+.card .fa-clock-o{
+    font-weight: 900;
+}
+.card .card-body .card-title{
+    font-weight: 900;
+}
+
+.card .card-body .post-meta{
+    margin-bottom: 50px;
+}
+.collapse .navbar-nav .btn{
+    background-color: #f27c09;
+    border: #f27c09;
+    color: white;
+}
+.collapse .navbar-nav .btn:hover{
+    background-color: black;
+    color: white;
+}
+a:not([href]):not([class]){
+    opacity: 0.8;
+}
+.sidebar .category .active{
+    font-size: 20px;
+}
+.recent-post h2{
+    font-weight: 600;
+}
+
+.img-p{
+    border-top: 1px solid #d8e9ff;
+}
+.img-p .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-p .text p{
+    padding-bottom: 0%;
+}
+.img-p .text p:hover{
+    color: #f27c09;
+}
+.recent-post h2{
+    background-color: #f27c09;
+    color: white;
+    margin-bottom: 0%;
+    padding-bottom: 15px;
+    border: 1px solid #f27c09;
+}
+.category1:hover .text{
+    color: #f27c09;
+}
+.category1 .badge{
+    background-color: black;
+}
+.category1:hover .badge{
+    background-color: #f27c09;
+    color: white;
+}

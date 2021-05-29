@@ -1,0 +1,12 @@
+.img2{
+    margin: auto;
+}
+.searching .btn{
+    background-color:  #f27c09;
+    color: white;
+    margin-left: 40%;
+    padding: 10px 20px;
+}
+.searching .btn:hover{
+    background-color: black;
+}

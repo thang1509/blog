@@ -1,0 +1,30 @@
+.img1{
+    margin: auto;
+}
+.collapse .nav-item .nav-link .arrow1{
+    padding: 0 5px;
+}
+.category1 .btn{
+    background-color:  #f27c09;
+    color: white;
+    margin-left: 40%;
+    padding: 10px 20px;
+}
+.category1 .btn:hover{
+    background-color: black;
+}
+.create-post .card-body p label{
+    width: 15%;
+}
+
+.create-post .card-body p input{
+    width: 60%;
+}
+@media screen and (max-width:768px){
+    .create-post .card-body p label{
+        width: 30%;
+    }
+    .create-post .card-body p input{
+        width: 60%;
+    }
+}
